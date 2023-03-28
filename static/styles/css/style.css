@@ -1,3 +1,136 @@
 body {
   margin: 0;
+}
+
+.header {
+  width: 100%;
+  background-color: #210002;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 11;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+}
+.header__link {
+  padding: 5px 10px;
+  color: #ffaf00;
+  text-decoration: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+.header__link:hover {
+  color: #ffaf00;
+  background-color: #5a1715;
+}
+.header__active {
+  background-color: #a34300;
+}
+.header__active:hover {
+  background-color: #a34300;
+}
+.header__title {
+  color: #ffaf00;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: inherit;
+  margin: 0;
+  font-weight: 700;
+}
+
+.parallax {
+  height: 1000px;
+  position: relative;
+  z-index: 10;
+}
+.parallax__item {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+}
+.parallax__0 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax0.png");
+}
+.parallax__1 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax1.png");
+}
+.parallax__2 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax2.png");
+  background-attachment: fixed;
+}
+.parallax__3 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax3.png");
+}
+.parallax__4 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax4.png");
+}
+.parallax__5 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax5.png");
+}
+.parallax__6 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax6.png");
+}
+.parallax__7 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax7.png");
+}
+.parallax__8 {
+  background-image: url("http://www.firewatchgame.com/images/parallax/parallax8.png");
+}
+
+.information {
+  background: #210002;
+}
+
+.available {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+.available__title {
+  color: #ffaf00;
+  font-size: 48px;
+  margin-bottom: 25px;
+  font-family: inherit;
+}
+.available__devices {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 650px;
+}
+.available__device {
+  width: 300px;
+  padding: 5px 0;
+  color: #210002;
+  background: url("http://www.firewatchgame.com/images/banner_transparent_left.png") no-repeat left center/contain, url("http://www.firewatchgame.com/images/banner_transparent_right.png") no-repeat right center/contain;
+  background-color: #ffaf00;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.available__device:hover {
+  background-color: #fff;
+  color: #210002;
+  transition: all 0.3s ease-in-out;
+}
+.available__device img {
+  height: 17px;
+  vertical-align: -2px;
+  margin-right: 11px;
 }/*# sourceMappingURL=style.css.map */
